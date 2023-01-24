@@ -1,0 +1,29 @@
+Funcion rta = fF(n)
+	
+	Definir rta,n1,n2,nbu Como Entero
+	nbu=n
+	n1=1
+	n2=1
+	
+	Si n<=1 Entonces
+		rta=1
+	SiNo
+		Para n=1 Hasta n-3 Hacer
+			rta=n1+n2
+			n1=n2
+			n2=rta
+		Fin Para
+	Fin Si
+	
+	rta=n1+n2
+	
+Fin Funcion
+
+Algoritmo Extra_7
+	
+	Definir n Como Entero
+	Leer n
+	
+	Escribir "La sucesión del número " n " en la sucesión de Fibonacci es: " fF(n)
+	
+FinAlgoritmo

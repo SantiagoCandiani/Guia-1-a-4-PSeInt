@@ -1,0 +1,36 @@
+Algoritmo Gui4_Extra_ejercicio4
+//	Realizar un programa que calcule la multiplicación de dos matrices de enteros de 3x3.
+//	Inicialice las matrices para evitar el ingreso de datos por teclado.
+	
+	
+	Definir matrizA, matrizB, matrizC, f, c Como Entero
+	
+	Dimension matrizA(3,3)
+	Dimension matrizB(3,3)
+	Dimension matrizC(3,3)
+	
+	Para f=0 Hasta 2 Hacer
+		Para c=0 Hasta 2 Hacer
+			matrizA(f,c) = Aleatorio(1,30)
+			Escribir Sin Saltar matrizA(f,c) " "
+		Fin Para
+		Escribir ""
+	Fin Para
+	Escribir "___________"
+	Para f=0 Hasta 2 Hacer
+		Para c=0 Hasta 2 Hacer
+			matrizB(f,c) = Aleatorio(1,30)
+			Escribir Sin Saltar matrizB(f,c) " "
+		Fin Para
+		Escribir ""
+	Fin Para
+	Escribir "___________"
+	Para f=0 Hasta 2 Hacer
+		Para c=0 Hasta 2 Hacer
+			matrizC(f,c) = matrizA(f,c) * matrizB(f,c)
+			Escribir Sin Saltar matrizC(f,c) " "
+		Fin Para
+		Escribir ""
+	Fin Para
+	
+FinAlgoritmo

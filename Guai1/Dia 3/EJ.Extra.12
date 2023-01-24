@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	//Pide al usuario dos números y muestra la "distancia" entre ellos (el valor absoluto de su diferencia, de modo que el resultado sea siempre positivo).
+	
+	Definir num1, num2, distancia Como Real
+	
+	Escribir "Ingrese el primer numero"
+	leer num1
+	Escribir "Ingrese el segundo numero"
+	leer num2
+	
+	distancia =  abs(num2 - num1)
+	
+	Escribir "La distancia entre ellos (en valor absoluto) es " distancia
+	
+	
+FinAlgoritmo

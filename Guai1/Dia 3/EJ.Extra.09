@@ -1,0 +1,27 @@
+Algoritmo sin_titulo
+	
+	//Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas, 
+	//el vendedor desea saber cuánto dinero obtendrá por concepto de comisiones por 
+	//las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.
+	
+	definir base, venta1, venta2, venta3, comisiones, total Como Real
+	
+	Escribir "Ingrese su sueldo Base"
+	leer base
+	Escribir "Ingrese el valor de la venta 1"
+	leer venta1
+	Escribir "Ingrese el valor de la venta 2"
+	leer venta2
+	Escribir "Ingrese el valor de la venta 3"
+	leer venta3
+
+	
+	comisiones = (venta1 + venta2 + venta3)*0.1
+	total = comisiones + base
+	
+	Escribir "Sus comisiones por venta de este mes fueron de " comisiones " pesos"
+	Escribir "El total que usted cobrara este mes sera de " total " pesos"
+
+	
+	
+FinAlgoritmo

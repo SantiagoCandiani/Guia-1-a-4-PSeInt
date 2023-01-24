@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	
+	//Un ciclista parte de una ciudad A a las HH horas, MM minutos y SS segundos. El tiempo
+	//de viaje hasta llegar a otra ciudad B es de T segundos. Escribir un algoritmo que
+	//determine la hora de llegada a la ciudad B.
+	
+	
+	Definir seg, hora1, minuto1, segundo1,tiempo1, hora2, minuto2, segundo2,tiempo2 Como Real
+	Escribir "Ingrese hora de salida (HH;MM;SS)"
+	Leer hora1, minuto1, segundo1
+	Escribir "Cuantos segundos se tardó?"
+	Leer seg
+	tiempo1 = hora1*3600 + minuto1*60 +segundo1 ///Pasamos la hora inicial a segundos
+	tiempo2 = tiempo1 + seg
+	hora2 = trunc(tiempo2/3600) ///Calculamos la HORA de llegada
+	minuto2 = tiempo2/hora2
+	Escribir "Hora ",hora2
+	Escribir "Minuto ",minuto2
+
+	
+	
+FinAlgoritmo

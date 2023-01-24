@@ -1,0 +1,42 @@
+Algoritmo meses
+	//Ingresar un número del 1 - 12 y mostrar el mes del año que corresponde, si el número ingresado
+	//no es correcto mostrar un "mensaje de error".
+	
+	Definir nummes Como Entero
+	
+	Escribir "Ingrese el numero de mes que desea saber a cual corresponde"
+	Leer nummes
+	
+	Segun nummes Hacer
+		1:
+			Escribir "El mes elegido corresponde a Enero"
+		2:
+			Escribir "El mes elegido corresponde a Febrero"
+		3:
+			Escribir "El mes elegido corresponde a Marzo"
+		4:
+			Escribir "El mes elegido corresponde a Abril"
+		5:
+			Escribir "El mes elegido corresponde a Mayo"	
+		6:
+			Escribir "El mes elegido corresponde a Junio"
+		7:
+			Escribir "El mes elegido corresponde a Julio"
+		8:
+			Escribir "El mes elegido corresponde a Agosto"
+		9:
+			Escribir "El mes elegido corresponde a Setiembre"
+		10:
+			Escribir "El mes elegido corresponde a Octubre"
+		11:
+			Escribir "El mes elegido corresponde a Noviembre"
+		12:
+			Escribir "El mes elegido corresponde a Diciembre"
+			
+		De Otro Modo:
+			escribir "Ese numero no corresponde a un mes calendario"
+	Fin Segun
+	
+	
+	
+FinAlgoritmo

@@ -1,0 +1,30 @@
+Algoritmo sin_titulo
+	//La empresa "Te llevo a todos lados" está destinada al alquiler de autos y tiene un sistema
+	//de tarifa que consiste en cobrar el alquiler por hora. Si el cliente devuelve el auto dentro
+	//de las 2 horas de uso el valor que corresponde pagar es de $400 pesos y la nafta va de
+	//regalo. Cuando el cliente regresa a la empresa pasadas las 2 horas, se ingresan la
+	//cantidad de litros de nafta gastados y el tiempo transcurrido en horas. Luego, se le cobra
+	//40 pesos por litro de nafta gastado, y la hora se fracciona en minutos, cobrando un total
+	//de $5,20 el minuto de uso. Realice un programa que permita registrar esa información y el
+	//total a pagar por el cliente.
+	
+	Definir hora1, minuto1 como enteros
+	Definir litros, sobrepaso Como Real
+	
+	Escribir "Ingrese las horas de uso (en hs)"
+	Leer hora1
+	Escribir "Ingrese los minutos de uso (en min)"
+	Leer minuto1
+	
+		Si 120>= ((hora1*60)+minuto1) Entonces
+			Escribir "Usted debera pagar $400"
+		SiNo
+			Escribir "Ingrese los litros de nafta gastados"
+			leer litros
+			
+			sobrepaso = (40*litros) + (5.2*((hora1*60)+minuto1))
+			Escribir "El monto total a abonar es de " sobrepaso " Pesos"
+			
+		Fin Si
+	
+FinAlgoritmo

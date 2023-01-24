@@ -1,0 +1,27 @@
+Algoritmo sin_titulo
+	
+	Definir num, i, nMayor, nMenor Como Entero
+	
+	Escribir "Ingrese un numero"
+	leer num
+	
+	nMayor=num
+	nMenor=num
+	
+	Para i=1 Hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese un numero"
+		leer num
+		
+		si num > nMayor Entonces
+			nMayor = num
+		FinSi
+		
+		si num < nMenor Entonces
+			nMenor = num
+		FinSi
+	Fin Para
+	
+	Escribir "El numero mayor es: " nMayor
+	Escribir "El numero menor es: " nMenor
+	
+FinAlgoritmo

@@ -1,0 +1,21 @@
+Algoritmo sin_titulo
+	//Una tienda ofrece para los meses de septiembre, octubre y noviembre un descuento del
+	//10% sobre el total de la compra que realiza un cliente. Solicitar al usuario que ingrese un
+	//mes y el importe de la compra. El programa debe calcular cuál es el monto total que se
+	//debe cobrar al cliente e imprimirlo por pantalla.
+	
+	Definir mes Como entero
+	Definir importe Como Real
+	
+	Escribir "Ingrese el mes en que hizo la compra (en numeros)"
+	Leer mes
+	Escribir "Ingrese el importe de la compra"
+	leer importe
+	
+	Si mes = 9 o mes = 10 o mes = 11 Entonces
+		Escribir "El importe a abonar sera de " importe*0.9 " pesos"
+	SiNo
+		Escribir "El importe a abonar sera de " importe " pesos"
+	Fin Si
+	
+FinAlgoritmo

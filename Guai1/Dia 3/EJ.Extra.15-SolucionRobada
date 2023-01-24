@@ -1,0 +1,25 @@
+Algoritmo C2Extra15
+		
+		Definir hora, min, seg, Th,Tm,Ts,TSeg, Fh,Fm,Fs,FSeg, tiempoTotal,tTh,tTm,tTs Como real
+		
+		Escribir"hora de salida separado en Hora, min y segundos"
+		Leer hora, min, seg
+		Tseg = (hora*3600)+(min*60)+seg
+		
+		Escribir "tiempo transcurrido en segundos"
+		Leer Fseg
+		//Escribir "ingrese tiempo que demoro separado en Hora, min y segundos"
+		//Leer Th,Tm,Ts
+		//Fseg = (Th*3600)+(Tm*60)+Ts
+		
+		tiempoTotal = Tseg+Fseg
+		
+		tTh = trunc(tiempoTotal/(3600))
+		tTm = trunc((tiempoTotal%(3600))/60)
+		tTs = ((tiempoTotal%(60))/60)
+		
+		Escribir "Hora de llegada ",tTh,":",tTm,":", tTs
+		
+		
+
+FinAlgoritmo

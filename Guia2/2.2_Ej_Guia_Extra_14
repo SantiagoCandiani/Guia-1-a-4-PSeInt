@@ -1,0 +1,36 @@
+//14. Escriba un programa que lea un número entero (altura) y a partir de él cree una escalera invertida de asteriscos con esa altura.
+//Por ejemplo, si ingresamos una altura de 5 se deberá mostrar:
+
+//	*****
+//	****
+//	***
+//	**
+//	*
+
+Algoritmo sin_titulo
+	
+	Definir num,i, j Como Entero
+	
+	Escribir "Ingrese un numero que definira la altura de la escalera invertida"
+	Leer num
+	
+	i=0
+	j=0
+	
+	Para i=1 Hasta num Con Paso 1 Hacer // Aca num define la cantidad de filas que va a tener la escalera
+		
+		Para j=1 Hasta num Con Paso 1 Hacer // Aca num define la cantidad de * que va a escribir en cada fila
+			
+			si num>0 Entonces	//cuando num sea mayor q cero, escribe *. Al llegar a cero termina el bucle.
+				Escribir "*" Sin Saltar
+			FinSi
+			
+		Fin Para
+		
+		Escribir ""	//Separa las filas
+		
+		num=num-1		//Le va restando 1 a num, con lo que al reiniciarse el para de la j (linea 22) en esta fila escribira un * menos
+		
+	Fin Para
+	
+FinAlgoritmo

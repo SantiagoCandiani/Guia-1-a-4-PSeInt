@@ -1,0 +1,25 @@
+Algoritmo sin_titulo
+	definir num, i, j, x, a, b Como entero 
+	
+	Escribir "Ingrese un número de lados"
+    leer num   
+	
+	Para i <- 1 Hasta num
+        Escribir Sin Saltar " * "
+    Fin Para
+    Escribir ""    
+	si num>2 Entonces    Para x <- 1 Hasta num-2
+			Para j <- 1 Hasta 2
+				Escribir Sin Saltar " * "
+				Para b <- 1 Hasta num-2
+					Escribir Sin Saltar"   "
+				Fin Para
+			Fin Para
+			Escribir ""
+		Fin Para
+	FinSi
+    Para a <- 1 Hasta num
+        Escribir Sin Saltar " * "
+    Fin Para
+    escribir ""
+FinAlgoritmo

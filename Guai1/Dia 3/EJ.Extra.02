@@ -1,0 +1,18 @@
+Algoritmo sin_titulo
+	//Calcular el cambio de monedas en dólares y euros al ingresar cierta cantidad de dinero en pesos.
+	
+	Definir pesos1, pesos2, dolares, euros Como Real
+	
+	Escribir "Ingrese la cantidad de dolares que quiere convewrtir a pesos"
+	Leer dolares
+	
+	Escribir "Ingrese la cantidad de euros que quiere convertir a pesos"
+	Leer euros
+	
+	pesos1 = dolares * 300
+	pesos2 = euros * 500
+	
+	Escribir  "Su dolares equivalen a " pesos1 " pesos"
+	Escribir  "Su euros equivalen a " pesos2 " pesos"
+	
+FinAlgoritmo

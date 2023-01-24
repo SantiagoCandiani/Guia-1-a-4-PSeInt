@@ -1,0 +1,40 @@
+Algoritmo sin_titulo
+	
+    Definir num, i, j, factor como entero
+	
+	Escribir "Ingrese un número hasta el cual calcularemos los factoriales enteros desde el 1 hasta el numero elegido"
+	leer num
+	
+    Para i<-1 Hasta num Con Paso 1 Hacer
+        factor = 1
+		
+        Escribir i, "! = " Sin Saltar
+		
+        Para j<-1 Hasta i Con Paso 1 Hacer
+			
+            factor = factor * j
+			
+            Si i <> 1 Entonces
+				
+                Escribir j Sin Saltar
+				
+            Fin Si
+			
+            Si j <> i Entonces
+				
+                Escribir "*" Sin Saltar
+				
+            Fin Si
+			
+        Fin Para
+		
+        Si i <> 1 Entonces
+			
+            Escribir " = " Sin Saltar
+			
+        Fin Si
+		
+        Escribir factor
+		
+    Fin Para
+FinAlgoritmo

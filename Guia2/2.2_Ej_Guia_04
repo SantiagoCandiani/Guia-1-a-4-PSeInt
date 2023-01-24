@@ -1,0 +1,21 @@
+// Teniendo en cuenta que la clave es "eureka", escribir un programa que nos pida ingresar una clave.
+// Sólo se cuenta con 3 intentos para acertar, si fallamos los 3 intentos se deberá mostrar un mensaje 
+// indicándonos que hemos agotado esos 3 intentos. Si acertamos la clave se deberá mostrar un mensaje 
+// que indique que se ha ingresado al sistema correctamente.
+Algoritmo sin_titulo
+	Definir pass Como Caracter
+	Definir i Como Entero
+	i <- 0
+	Repetir
+		Escribir 'Ingrese una contraseña'
+		Leer pass
+		i <- i+1
+	Mientras Que pass<>'eureka' y i<3
+	
+	Si pass= "eureka" o i>3 Entonces
+		Escribir ' Usted ingresó al sistema de manera correcta'
+	SiNo
+		Escribir 'Usted agotó sus 3 intentos'
+	FinSi
+
+FinAlgoritmo

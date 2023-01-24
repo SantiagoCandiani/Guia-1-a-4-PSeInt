@@ -1,0 +1,17 @@
+Algoritmo sin_titulo
+	//Hacer un programa que ingrese por teclado un número total de segundos y que luego pueda mostrar la cantidad de horas, minutos y segundos que existen en el valor ingresado.
+	
+	Definir dato, hr, min, seg Como Entero
+	
+	Escribir "Ingrese la cantidad de segundos que quiere pasar a Hr, Min, Seg"
+	Leer dato
+	
+	hr = trunc(dato/3600)
+	min = trunc((dato - (hr*3600))/60)
+	seg = dato - (hr*3600)-(min*60)
+	
+	
+	Escribir "Sus segundos equivalen a " hr " horas " min " minutos " seg " segundos"
+	
+	
+FinAlgoritmo

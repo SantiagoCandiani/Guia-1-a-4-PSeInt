@@ -1,0 +1,45 @@
+Algoritmo sin_titulo
+	
+	Definir nPractico, nProblema, nTeorico, promedio Como Real
+	Definir nombre Como Caracter
+	
+	
+	Escribir "Ingrese el nombre del alumno"
+	leer nombre
+	
+	Mientras nombre<>"" Hacer
+		
+		Escribir "Ingrese nota del trabajo practico" Sin Saltar
+		leer nPractico
+		
+		mientras nPractico<0 o nPractico>10 Hacer
+			Escribir "Ingrese una nota correcta del Trabajo Practico de: " nombre Sin Saltar
+			leer nPractico
+		FinMientras
+		
+		Escribir "Ingrese nota de resolucion de problemas" Sin Saltar
+		leer nProblema
+		
+		mientras nProblema<0 o nProblema>10 Hacer
+			Escribir "Ingrese una nota correcta de Resolucion de Problemas de: " nombre Sin Saltar
+			leer nProblema
+		FinMientras
+		
+		Escribir "Ingrese nota del teorico" Sin Saltar
+		leer nTeorico
+		
+		mientras nTeorico<0 o nTeorico>10 Hacer
+			Escribir "Ingrese una nota correcta del Teorico de: " nombre Sin Saltar
+			leer nTeorico
+		FinMientras
+		
+		promedio =0.1*nPractico+0.5*nProblema+0.4*nTeorico
+		
+		Escribir "La nota promedio de " nombre " es de: " promedio
+		Escribir ""
+		Escribir "Ingrese el nombre del proximo alumno"
+		Leer nombre
+		
+	Fin Mientras
+	Escribir "Promedios terminados, No hay mas alumnos"
+FinAlgoritmo

@@ -1,0 +1,12 @@
+Algoritmo Extras01
+	
+	//Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
+	
+	definir nombre Como Caracter
+	
+	Escribir "Ingrese su nombre completo"
+	Leer nombre
+	
+	Escribir "Buen dia " nombre ", que tal te va?"
+	
+FinAlgoritmo

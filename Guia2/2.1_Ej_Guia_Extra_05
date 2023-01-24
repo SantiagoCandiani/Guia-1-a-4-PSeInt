@@ -1,0 +1,31 @@
+Algoritmo sin_titulo
+	//Solicitar al usuario que ingrese un valor entre 1 y 7. EL programa debe mostrar por pantalla
+	//un mensaje que indique a qué día de la semana corresponde. Considere que el número 1
+	//corresponde al día "Lunes", y así sucesivamente.
+	
+	
+	definir num1 como entero
+	Escribir "Ingrese un numero del 1 al 7"
+	leer num1
+	
+	Segun num1 Hacer
+		1:
+			escribir "Hoy es lunes"
+		2:
+			escribir "Hoy es martes"
+		3:
+			escribir "Hoy es miercoles"
+		4:
+			escribir "Hoy es jueves"
+		5:
+			escribir "Hoy es viernes"
+		6:
+			escribir "Hoy es sabado"
+		7:
+			escribir "Hoy es domingo"
+			
+		De Otro Modo:
+			Escribir "Ingreso un numero incorrecto"
+	Fin Segun
+	
+FinAlgoritmo

@@ -1,0 +1,36 @@
+//Hacer un algoritmo para calcular la media de los números pares e impares, sólo se ingresará diez números.
+
+Algoritmo sin_titulo
+	
+	Definir num, cont1, par, impar, i, j Como Entero
+	
+	cont1=1
+	par=0
+	impar=0
+	i=0
+	j=0
+	
+	Repetir
+		Escribir "Ingrese el " cont1 "° numero"
+		leer num
+		
+		si num mod 2=0 Entonces
+			par = par+num
+			i=i+1
+			
+		FinSi
+		
+		si num mod 2<>0 Entonces
+			impar = impar+num
+			j=j+1
+		FinSi
+		
+		
+		cont1=cont1+1
+		
+	Mientras Que cont1<=10
+	
+	Escribir "El promedio de los numeros pares es: " par/i
+	Escribir "El promedio de los numeros impares es: " impar/j
+	
+FinAlgoritmo

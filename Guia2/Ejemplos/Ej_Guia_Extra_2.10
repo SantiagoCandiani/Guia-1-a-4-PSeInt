@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	definir manzana,precio Como Real
+	escribir "precio de kg"
+	leer precio
+	escribir "cuantos kg de manzanas quiero"
+	leer manzana
+	si (manzana >0) y (manzana <=2) entonces 
+		escribir "usted debera pagar " precio
+	SiNo
+				si (manzana >2) y (manzana <=5) entonces
+			escribir "usted debera pagar " precio * 0.9
+		SiNo
+			si (manzana >5) y (manzana <=10) Entonces
+				escribir "usted debera pagar " precio * 0.85
+			SiNo
+				
+				si (manzana >10)  Entonces
+					Escribir "usted debera pagar " precio * 0.8
+				FinSi
+				
+			FinSi
+		FinSi
+		
+	FinSi
+
+FinAlgoritmo

@@ -1,0 +1,64 @@
+Funcion capicua ( nro )
+	
+	Definir long,pn,un,longf,longbu Como Entero		//pn: primer nro, un: último nro
+	Definir cnro Como Real
+	Definir nroc Como Logico
+	
+	long=0
+	cnro=nro
+	longf=0
+	
+	Repetir
+		
+		cnro=cnro/10
+		long=long+1
+		
+	Mientras Que cnro>=1
+	
+	Si long%2<>0 Entonces
+		longbu=long
+		long=long-1
+	SiNo
+		longbu=long
+	Fin Si
+	
+	Para long=1 Hasta long/2 Hacer
+		
+		longbu=longbu-1
+		
+		un=nro%(10^long)
+		pn=trunc(nro/(10^longbu))
+		
+		Si un>=10 Entonces
+			un=(un-(un%10^(long-1)))/(10^longf)
+		FinSi
+		Si pn>=10 Entonces
+			pn=pn-(trunc(pn/10)*10)
+		FinSi
+		
+		Si pn=un Entonces
+			longf=longf+1
+		FinSi
+		
+	Fin Para
+	
+	long=long-1
+	
+	Escribir "Es el número ingresado capicúa?"
+	nroc=long=longf
+	Escribir nroc
+	
+	
+Fin Funcion
+
+
+
+Algoritmo Extra_8
+	
+	Definir nro Como Entero
+	Escribir "Escriba un número:"
+	Leer nro
+	
+	capicua(nro)
+	
+FinAlgoritmo

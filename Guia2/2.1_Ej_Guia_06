@@ -1,0 +1,32 @@
+Algoritmo sin_titulo
+	//Escriba un programa que pida 3 notas y valide si esas notas están entre 1 y 10. Si están
+	//entre esos parámetros se debe poner en verdadero una variable de tipo lógico y si no
+	//ponerla en falso. Al final el programa debe decir si las 3 notas son correctas usando la
+	//variable de tipo lógico.
+	
+	definir not1, not2, not3 Como Entero
+	definir variable Como Logico
+	
+	Escribir "Ingrese la nota 1"
+	leer not1
+	Escribir "Ingrese la nota 2"
+	leer not2
+	Escribir "Ingrese la nota 3"
+	leer not3
+	
+	si not1>=1 y not1<=10 y not2>=1 y not2<=10 y not3>=1 y not3<=10 Entonces
+		variable = Verdadero
+	SiNo
+		variable = Falso
+		
+	FinSi
+	
+	si variable = Verdadero Entonces
+		Escribir "Las 3 notas son CORRECTAS"
+	FinSi
+	
+	si variable = FALSO Entonces
+			Escribir "Una o mas notas fueron INCORRECTAS"
+	FinSi
+	
+FinAlgoritmo

@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	//Realizar un programa que pida tres notas y determine si un alumno aprueba o reprueba un
+	//curso, sabiendo que aprobará el curso si su promedio de tres calificaciones es mayor o
+	//igual a 70; y reprueba en caso contrario.
+	
+	definir not1, not2, not3 Como Entero
+	Definir promedio Como Real
+	Escribir "Ingrese nota 1"
+	Leer not1
+	Escribir "Ingrese nota 2"
+	Leer not2
+	Escribir "Ingrese nota 3"
+	Leer not3
+	
+	promedio = (not1+not2+not3)/3
+	
+	Si promedio >= 70 Entonces
+		Escribir "Usted aprobo el curso"
+	SiNo
+		Escribir "Usted reprobo el curso"
+	Fin Si
+FinAlgoritmo

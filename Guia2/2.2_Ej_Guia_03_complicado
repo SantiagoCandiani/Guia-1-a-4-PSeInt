@@ -1,0 +1,22 @@
+Algoritmo ej3
+	definir i, num,num1, promedio Como Real
+	num1=0
+	i=0
+	num=0
+	mientras num <>-1 Hacer
+		Escribir "ingrese numeros aleatorios"
+		leer num
+		si num>=0 Entonces
+			
+			num1=num1+num
+			i=i+1
+		FinSi
+		si num<-1
+			escribir "Ingrese un numero positivo"
+			
+		FinSi
+		
+	FinMientras
+	promedio= (num1 )/i
+	escribir "el promedio es " promedio
+FinAlgoritmo

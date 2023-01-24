@@ -1,0 +1,22 @@
+	Algoritmo sin_titulo
+		Definir num , i , j Como Entero
+		Escribir "Ingrese la Longitud del lado del cuadrado"
+		leer num
+		Para i <- 1 Hasta num Hacer
+			Escribir Sin Saltar " * "
+		FinPara
+		Escribir "   "
+		Para i <- 1 Hasta num-2 Hacer
+			Escribir Sin Saltar " * "
+			Para j <- 1 Hasta num-2 Hacer
+				Escribir Sin Saltar "   "
+			FinPara
+			Escribir " * "
+		FinPara
+		Para i <- 1 Hasta num Hacer
+			Escribir Sin Saltar " * "
+		FinPara
+		Escribir "   "
+FinAlgoritmo
+
+

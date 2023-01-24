@@ -1,0 +1,50 @@
+///Escribir un programa que lea números enteros hasta teclear 0 (cero). 
+///Al finalizar el programa se debe mostrar el máximo número ingresado, 
+///el mínimo, y el promedio de todos ellos.
+//Para poder lograr, por ejemplo, el máximo inicializaremos una variable 
+//en cero llamada numeroMaximo. Luego iremos comparando cada número que 
+//se ingresa con esta variable. Si es mayor reemplazaremos el valor de
+//numeroMaximo. Por ejemplo si 5>0 entonces el máximo entre estos números será 5.
+//Si luego ingreso el número 2, se evalúa 2>5 lo que resultará falso y por lo tanto 
+//el valor 5 de numeroMaximo no se reemplaza. Una lógica similar tendrá el número menor.
+
+
+Algoritmo sin_titulo
+	
+	Definir num, i, suma, max, min Como Entero
+	Definir promedio Como Real
+	
+	Escribir "Ingrese un numero" //lo tuve que agregar xq sino, no podia calcular el menor.
+	leer num
+	i=0
+	suma = num
+	max = num
+	min = num
+	
+	Repetir
+		Escribir "Ingrese un numero"
+		Escribir "Ingrese 0 (cero) para terminar la secuencia"
+		leer num		
+		
+		si num > max Entonces
+			max = num
+		FinSi
+		
+		si num < min y num <> 0 Entonces
+			min = num
+		FinSi
+		
+		i=i+1
+		suma = suma + num
+		
+	Mientras Que num <> 0
+	
+	promedio = suma/i
+	
+	Escribir "El numero maximo de la serie es " max
+	Escribir "El numero minimo de la serie es " min
+	Escribir "El promedio de la serie es " promedio
+	
+	
+	
+FinAlgoritmo

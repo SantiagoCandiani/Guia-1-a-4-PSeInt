@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	//5. Mostrar el área y perímetro de un rombo.
+	
+	definir lado, diagonal1, diagonal2, perimetro, area Como Real
+	
+	Escribir "Ingrese largo del lado en mm"
+	leer lado
+	Escribir "Ingrese largo de una de las diagonales en mm"
+	leer diagonal1
+	Escribir "Ingrese largo de la otra diagonal en mm"
+	leer diagonal2
+	
+	perimetro = lado*4
+	area = (diagonal1 * diagonal2) /2
+	
+	Escribir "El perimetro de su rombo es " perimetro " mm."
+	Escribir "El area de su rombo es " area " mm2"
+
+	
+FinAlgoritmo

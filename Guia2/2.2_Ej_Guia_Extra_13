@@ -1,0 +1,25 @@
+//Siguiendo el ejercicio 20 de los ejercicios principales, ahora deberemos hacer lo mismo pero que la cadena se muestre al revés.
+//Por ejemplo, si tenemos la cadena: Hola, deberemos mostrar a l o H.
+
+
+Algoritmo sin_titulo
+	
+	definir frase Como Caracter
+	definir i, j, cont1 Como Entero
+	
+	Escribir "Ingrese una frase"
+	Leer frase
+	
+	j=0
+	cont1=1
+	
+	Para i=1 Hasta Longitud(frase) Con Paso 1 Hacer
+		
+		j=Longitud(frase)-cont1 //va devolviendo de la ultima a la primera posicion. j indica la posicion
+		
+		Escribir Sin Saltar Subcadena(frase, j, j) " "
+		
+		cont1= cont1+1 // se usa para ir restando una posicion a la frase
+		
+	Fin Para
+FinAlgoritmo

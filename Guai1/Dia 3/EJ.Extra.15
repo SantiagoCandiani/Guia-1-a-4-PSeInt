@@ -1,0 +1,33 @@
+Algoritmo sin_titulo
+	
+	//Un ciclista parte de una ciudad A a las HH horas, MM minutos y SS segundos. 
+	//El tiempo de viaje hasta llegar a otra ciudad B es de T segundos.
+	//Escribir un algoritmo que determine la hora de llegada a la ciudad B.
+	
+	Definir hrs, mins, segs, viaje, segtotal, hrll, minll, segll Como Entero
+	
+	Escribir "A continuacion se le pedira que ingrese "
+	Escribir "la hora exacta en la que salio del punto A"
+	Escribir "Ingrese la hora de salida" Sin Saltar
+	Leer hrs
+	Escribir "Ingrese los minutos de salida" Sin Saltar
+	Leer mins
+	Escribir "Ingrese los segundos de salida" Sin Saltar
+	Leer segs
+	Escribir "Ingrese los segundos que tardo en llegar del punto A al punto B"
+	leer viaje
+	
+	segtotal = ((hrs*3600) + (mins*60) + segs) + viaje //Paso la hora de salida (hr, min, seg) todo a segundos, luego sumo los segundos que tomo el viaje
+	segtotal = segtotal%(24*3600)
+	
+	hrll = trunc(segtotal/3600)
+	minll = trunc((segtotal%3600)/60)
+	segll = (segtotal%60)
+	
+
+
+	Escribir "La hora de llegada es " hrll "Hs, " minll "min, " segll "seg."
+
+	
+	
+FinAlgoritmo

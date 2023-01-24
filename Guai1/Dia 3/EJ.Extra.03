@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	//Hacer un programa que calcule el salario de un empleado, si se descuenta el 20% de su salario bruto.
+	
+	Definir neto, bruto Como Real
+	
+	Escribir "Ingrese su salario Bruto"
+	Leer bruto
+	
+	neto = bruto * 0.8
+	
+	Escribir "Su salario neto sera de " neto " pesos"
+FinAlgoritmo

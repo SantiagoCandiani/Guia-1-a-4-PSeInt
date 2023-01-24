@@ -1,0 +1,50 @@
+Algoritmo sin_titulo
+//Una verdulería ofrece las manzanas con descuento según la siguiente tabla:
+//	Nº DE KILOS COMPRADOS % DESCUENTO
+//	0 ? 2
+//	2.01 ? 5
+//	5.01 ? 10
+//	10.01 en adelante
+	
+//	0%
+//	10%
+//	15%
+//	20%
+	//	Determinar cuánto pagará una persona que compre manzanas en esa verdulería
+	
+	definir kg, desc, precio Como Real
+	
+	Escribir "Ingrese cuantos Kg de manzana desea comprar"
+	Leer kg
+	Escribir "Ingrese el precio del Kg de manzana"
+	leer precio
+	
+	Si kg = 0 Entonces
+		Escribir "Usted no compro nada"
+	SiNo
+		Si kg>0 y kg<=2 Entonces
+			desc = 0
+			Escribir "Su descuento es del " desc " %"
+			Escribir "El monto total a abonar es de " kg*precio*((100-desc)/100)
+		SiNo
+			Si kg>2 y kg<=5 Entonces
+				desc = 10
+				Escribir "Su descuento es del " desc " %"
+				Escribir "El monto total a abonar es de " kg*precio*((100-desc)/100)
+			SiNo
+				Si kg>5 y kg<=10 Entonces
+					desc = 15
+					Escribir "Su descuento es del " desc " %"
+					Escribir "El monto total a abonar es de " kg*precio*((100-desc)/100)
+				SiNo
+					Si kg>10 Entonces
+						desc = 20
+						Escribir "Su descuento es del " desc " %"
+						Escribir "El monto total a abonar es de " kg*precio*((100-desc)/100)
+					
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+FinAlgoritmo

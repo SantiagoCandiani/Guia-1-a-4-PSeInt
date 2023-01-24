@@ -1,0 +1,25 @@
+Algoritmo sin_titulo
+//Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
+	//a. 55% del promedio de sus tres calificaciones parciales.
+	//b. 30% de la calificación del examen final.
+	//c. 15% de la calificación de un trabajo final.
+	
+	definir cal1, cal2, cal3, exf, tf, notafinal Como Real
+	
+	Escribir "Ingrese la nota de su primer parcial"
+	leer cal1
+	Escribir "Ingrese la nota de su segundo parcial"
+	leer cal2
+	Escribir "Ingrese la nota de su tercer parcial"
+	leer cal3
+	Escribir "Ingrese la nota de su examen final"
+	leer exf
+	Escribir "Ingrese la nota de su trabajo final"
+	leer tf
+	
+	notafinal = redon(((cal1 + cal2 + cal3) / 3) * 0.55) + redon(exf * 0.3) + redon(tf * 0.15)
+	
+	
+	Escribir "Su nota final sera de " notafinal
+	
+FinAlgoritmo

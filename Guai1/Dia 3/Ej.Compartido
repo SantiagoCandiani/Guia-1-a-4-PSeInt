@@ -1,0 +1,11 @@
+Algoritmo guia3_ej1
+	Definir num, centena, decena, unidad Como Real
+	Escribir "Insertar numero"
+	leer num
+	centena = trunc(num/100)
+	decena = trunc((num%100)/10)
+	unidad = num%10
+	Escribir "La centena es ", centena
+	Escribir "La decena es ", decena
+	Escribir "Unidad ", unidad
+FinAlgoritmo

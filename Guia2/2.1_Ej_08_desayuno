@@ -1,0 +1,29 @@
+Algoritmo desayuno
+	// Es tu turno, diseña un condicional anidado que le pregunte al usuario si quiere tomar té o café y
+	// en caso de que quiera tomar café, preguntar si solo o cortado y en caso de ser cortado, si prefiere
+	// leche vegetal.
+	Definir bebida,cafe, cortado Como Entero
+	Escribir "Ingrese 1 si desea tomar Té"
+	Escribir "Ingrese 2 si desea tomar Café"
+	Leer bebida
+	Si bebida=1 Entonces
+		Escribir "Le estamos preparando su Té"
+	SiNo
+			Escribir "Ingrese 1 si desea tomar Café Solo"
+			Escribir "Ingrese 2 si desea tomar Café Cortado"
+			Leer cafe
+			
+			Si cafe=1 Entonces
+				escribir "Le estamos preparando su Café Solo"
+			SiNo
+				Escribir "Ingrese 1 se desea su cortado con Leche de Vaca"
+				Escribir "Ingrese 2 se desea su cortado con Leche vegetal"
+				leer cortado
+				Si cortado=1 Entonces
+					Escribir "Le estamos preparando su Cortado con Leche de Vaca"
+				SiNo
+					Escribir "Le estamos preparando su Cortado con Leche Vegetal"
+				Fin Si
+			Fin Si
+	FinSi
+FinAlgoritmo

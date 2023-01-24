@@ -1,0 +1,29 @@
+Algoritmo Ejercicio_8_letra_inicial_final
+	//Construir un programa que simule un menú de opciones para realizar las cuatro
+	//operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+	//numéricos enteros. El usuario, además, debe especificar la operación con el primer
+    //carácter de la operación que desea realizar: ?S' o ?s? para la suma, ?R? o ?r? para la resta, ?M?
+    //o ?m? para la multiplicación y ?D? o ?d? para la división.
+	Definir num1,num2,suma,resta,multiplicacion,division Como Entero
+	definir operacion Como Caracter
+	Escribir "Operaciones matematicas con dos numeros enteros"
+	Escribir "Ingrese r/R para resta , s/S para suma, M/m para multiplicacion o d/D para division"
+	leer operacion 
+	operacion=Minusculas(operacion)
+	Escribir "El primer numero: "
+	leer num1
+	Escribir "El segundo numero: "
+	leer num2
+	Segun operacion Hacer
+		"s":
+			Escribir "El resultado es ", num1+num2
+		"r":
+			Escribir "El resultado es ", num1-num2
+		"d":
+			Escribir "El resultado es " , num1/num2
+		"m":
+			Escribir "El resultado es " , num1*num2
+		De Otro Modo:
+			Escribir "Ingrese un valor valido"
+	Fin Segun
+FinAlgoritmo
